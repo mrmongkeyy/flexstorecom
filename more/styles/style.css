@@ -1,0 +1,266 @@
+:root{
+  --black:#333333;
+  --gray:#434343;
+  --yellow:#ffd600;
+  --tblack:#333333d9;
+  --brown:#2d2d2d;
+}
+
+@font-face{
+  font-family:'mainfont';
+  src:url('../media/font/jsfont.ttf');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body{
+  background:var(--black);
+  padding:0;
+  margin: 0;
+  overflow: hidden;
+  font-family: mainfont;
+  user-select: none;
+}
+
+#root{
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  scrollbar-color: gray var(--black);
+}
+#ahead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ahead div{
+  color:var(--yellow);
+  display: flex;
+  font-weight: bold;
+  font-size: 24px;
+  justify-content: space-between;
+  height: 68px;
+  align-items: center;
+}
+#abody{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#afooter{
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color:gray;
+}
+#afooter div{
+  padding: 10px;
+}
+#navbox{
+  background:var(--gray);
+  width: 100%;
+}
+.smartWidth{
+  width:480px;
+}
+.fullwidth{
+  width: 100%;
+}
+.hoverable:hover{
+  color:gray;
+  cursor: pointer;
+}
+#listItem{
+  justify-content: flex-start;
+}
+#box{
+  height:200px;
+  background: var(--gray);
+}
+
+input{
+  padding:15px;
+  border:1px solid var(--black);
+  background:var(--black);
+  border-radius: 10px;
+  color:gray;
+  width: 100%;
+  outline:none;
+  font-family: mainfont;
+}
+select{
+  padding:15px;
+  border:1px solid var(--black);
+  background:var(--black);
+  border-radius: 10px;
+  color:gray;
+  width: 100%;
+  outline:none; 
+}
+textarea{
+  padding:2%;
+  border:1px solid var(--black);
+  background:var(--black);
+  border-radius: 10px;
+  color:gray;
+  width: 96%;
+  outline:none;
+  min-width: 96%;max-width: 96%;
+  font-family: mainfont;
+  height:200px;
+}
+.button{
+  padding:15px;
+  background:var(--yellow);
+  color:var(--black);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+#thumbnail div{
+  border-radius: 10px;
+  padding-right: 2%;
+}
+#thumbnail div img{
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  cursor: pointer;
+  height: 300px
+}
+#datapreview div{
+  border-radius: 10px;
+}
+#datapreview div img{
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  height: 200px;
+  margin-right: 10px;
+}
+.chatBox{
+  width:480px;
+  height:90%;
+  background: var(--gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.statuschanger{
+  margin-top: 20px;
+  width:480px;
+  height:auto;
+  background: var(--gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#boxInSide{
+  color:gray;
+}
+#boxInSide:hover{
+  color:var(--yellow);
+}
+.width50{
+  width:50%;
+}
+
+.fullsmall{
+  width:auto;
+}
+.productHeader{
+  font-size: 20px;
+}
+.productBody{
+  font-size:18px;
+}
+
+.hide480{
+
+}
+
+.fullsc{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+  width:100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: var(--tblack);
+}
+
+.fullsc img{
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+.fullsc #qrimg{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.inactive{
+  cursor: not-allowed;
+  background: gray;
+}
+
+@media screen and (max-width:900px){
+  .width50{
+    width: 90%;
+  }
+  .smartWidth{
+    width: 90%;
+  }
+  .fullsmall{
+    width: 100%;
+  }
+  .productHeader{
+    font-size: 16px;
+  }
+  .productBody{
+    font-size:14px;
+  }
+  .chatBox{
+    width:100%;
+    height:100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width:500px){
+  .hide480{
+    display: none;
+  }
+}

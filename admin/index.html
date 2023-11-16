@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexstore: Flexible, scured and trusted market.</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../more/media/tv.png">
+    <link rel=stylesheet href=../more/styles/style.css>
+  </head>
+  <body>
+    <div id=root>
+      <div id=ahead>
+        <div class=smartWidth>
+          <div>FlexStore.com</div>
+          <div style="
+            font-size:13px;
+            background: var(--black);
+            padding:10px;
+            color:gray;
+            border-radius: 8px;
+          ">
+            You are the admin!
+          </div>
+        </div>
+      </div>
+      <div id=abody>
+        <div class=fullwidth style="
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+        ">
+          <div id=navbox style="
+            height:64px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            position: sticky;
+            top:0;
+            z-index: 1;
+          ">
+            <div style="
+              height:100%;
+              display: flex;
+              align-items:center;
+              justify-content: space-around;
+              flex-direction: initial;
+              color:var(--yellow);
+            " class=width50>
+              <div style="
+                justify-content: center;
+                gap: 9px;
+                flex-direction: inherit;
+                align-items: center;
+                display: flex;
+              " class=hoverable id=adminLoadProducts>
+                <img src=../more/media/explore.png style=width:24px;height:24px;>
+                <span style=margin-top:5px; class=hide480>Our Products</span>
+              </div>
+              <div style="
+                justify-content: center;
+                gap: 9px;
+                flex-direction: inherit;
+                align-items: center;
+                display: flex;
+              " class=hoverable id=adminLoadPendingProducts>
+                <img src=../more/media/pendingIcon.png style=width:20px;height:20px;>
+                <span style=margin-top:5px; class=hide480>Pending Inbox</span>
+              </div>
+              <div style="
+                justify-content: center;
+                gap: 9px;
+                flex-direction: inherit;
+                align-items: center;
+                display: flex;
+              " class=hoverable id=adminLoadHistory>
+                <img src=../more/media/logdata.png style=width:24px;height:24px;>
+                <span style=margin-top:5px; class=hide480>History</span>
+              </div>
+              <div style="
+                justify-content: center;
+                gap: 9px;
+                flex-direction: inherit;
+                align-items: center;
+                display: flex;
+              " class=hoverable id=adminLoadHistory>
+                <img src=../more/media/config.png style=width:24px;height:24px;>
+                <span style=margin-top:5px; class=hide480>Konfigurasi</span>
+              </div>
+            </div>
+          </div>
+          <div id=bodybox style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:20px;
+            height:auto;
+          " class=width50
+          >
+          
+          </div>
+        </div>
+      </div>
+      <div id=afooter>
+        <div>
+          A Product By Infinitydreams 2023
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src=../more/scripts/md5.js></script>
+    <script src=../more/scripts/infinity.js></script>
+    <script src="../more/scripts/app.js"></script>
+    <script src=../more/scripts/view.js></script>
+</html>
